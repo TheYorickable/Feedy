@@ -18,7 +18,7 @@ var ItemList = Backbone.View.extend({
 	},
 
 	render: function () {
-		this.$el.append('<div id="v-itemlist"></div>');
+		this.$el.append('<ul class="v-itemlist"></ul>');
 
 		this.populateList();
 
@@ -30,6 +30,7 @@ var ItemList = Backbone.View.extend({
 			var Item = new ItemModel();
 
 			Item.set({
+				title: 'Item title nr' + i,
 				url: 'video/id/' + i,
 				score: i
 			});
@@ -43,7 +44,7 @@ var ItemList = Backbone.View.extend({
 			model: item
 		});
 
-		$('#v-itemlist', this.el).append(itemView.el);
+		$('.v-itemlist', this.el).append(itemView.el);
 	},
 });
 
