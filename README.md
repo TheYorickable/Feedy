@@ -1,7 +1,5 @@
-Think about:
-- Templates
-- Remove jQuery
-- this.render in Initialize function
-- .html instead of .append
+# Feedy
 
-		this.options = options || {};
+This is a sample application, maybe will be used again.
+
+Install using `npm i` afterwards run using `gulp`
